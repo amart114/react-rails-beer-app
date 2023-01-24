@@ -110,3 +110,71 @@ Processing by BeersController#index as HTML
 Completed 200 OK in 1149ms (Views: 1125.1ms | ActiveRecord: 5.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2023-01-23 17:00:47 -0700
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/anthony/.rbenv/versions/2.6.5/lib/ruby/gems/2.6.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  Rendered beers/index.html.erb within layouts/application (2.8ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+[31m[1mUsage Error[22m[39m: The project in /Users/anthony/repos/react-rails-beer-app/package.json doesn't seem to have been installed - running an install there might help
+
+[1m$ [22myarn run [--inspect] [--inspect-brk] [-T,--top-level] [-B,--binaries-only] <scriptName> ...
+
+Completed 500 Internal Server Error in 4622ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find index in /Users/anthony/repos/react-rails-beer-app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    4:     <title>CrudRailsReact</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= javascript_pack_tag 'index' %>
+    8: 
+    9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1090616456232478850_70160597861760'
+Started GET "/" for 127.0.0.1 at 2023-01-23 17:01:01 -0700
+Processing by BeersController#index as HTML
+  Rendering beers/index.html.erb within layouts/application
+  Rendered beers/index.html.erb within layouts/application (0.4ms)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+[31m[1mUsage Error[22m[39m: The project in /Users/anthony/repos/react-rails-beer-app/package.json doesn't seem to have been installed - running an install there might help
+
+[1m$ [22myarn run [--inspect] [--inspect-brk] [-T,--top-level] [-B,--binaries-only] <scriptName> ...
+
+Completed 500 Internal Server Error in 2904ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find index in /Users/anthony/repos/react-rails-beer-app/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+}
+):
+    4:     <title>CrudRailsReact</title>
+    5:     <%= csrf_meta_tags %>
+    6:     <%= csp_meta_tag %>
+    7:     <%= javascript_pack_tag 'index' %>
+    8: 
+    9:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   10:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1090616456232478850_70160594357680'
